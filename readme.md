@@ -115,6 +115,7 @@ const toArray=(...args)=>{
 
 **Object Destructuring**
 - You can extract specific elements/properties from an objects. Note that all the idividual contents of an object are usually called properties
+- Note that unlike Array destructuring, the names of the elements/properties must exactly match as in the object from which they are being extracted. In contrast for arrays the names need not to match exactly, the destructring operates by the location of index
 
 ```javascript
 // Below is our object
@@ -142,4 +143,12 @@ printName(person)
 
 const {name, age}=person;
 // here you are extrcting name and age from the person object
+```
+**Array Destructuring**
+- Similar to object destructuring, except that it operated by index location rather than the exact name of the element being extracted
+
+```javascript
+const hobbies=['Sports', 'Cooking'];
+const [hobby1,hobby2]=hobbies // Note that you are usiing a name different from sports or cooking
+console.log(hobby1,hobby2)
 ```
