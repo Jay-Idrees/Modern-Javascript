@@ -53,3 +53,23 @@ const summarizeUser=userName=>'Name is'+userName'
 // But if there are no parameters needed in the functions then empty paranthesis () should be mentioned
 const summarizeUser=()=>'Name is Jay'
 }
+
+```
+- Note that you cannot use `.this` inside the function if you are using an arrow function
+
+**Arrays and Looping through array**
+
+```Javascript
+const hobbies=['sports', 'Cooking'];
+
+// Traditional syntax
+
+for(var i = 0; i < 10; i++){
+    console.log(i)
+}
+
+// Modern ES6 Javascript
+// you are assigining a 'parameter name' of hobby to each individual datapoint in the hobbies array
+for (let hobby of hobbies){
+    console.log(hobby);
+}
