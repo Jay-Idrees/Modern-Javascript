@@ -92,8 +92,22 @@ consol.log(hobbies.map(hobby=>'Hobby:'+hobby))
 - It works for both objects and arrays
 
 ```javascript
+const hobbies=['sports', 'Cooking'];
+const hobbies2={
+    sports:'sports'
+    cooking:'cooking'
+}
 const copiedArray=[...hobbies]; //hobbies is a pre-existing array in this case
-const copiedArray={...hobbies}; //hobbies is a pre-exisiting object in this case
+const copiedArray={...hobbies2}; //hobbies is a pre-exisiting object in this case
 ```
 
-**Using Rest operator***
+**Using Rest operator**
+- Rest operator can be used to merge multiple arguments into an array
+
+```javascript
+const toArray=(...args)=>{
+    return args;
+    };
+
+    console.log(toArray(1,2,3,4))
+    // Note that it gives more flexibility with regards to how many arguments you want to pass into the array
