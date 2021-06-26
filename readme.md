@@ -152,3 +152,10 @@ const hobbies=['Sports', 'Cooking'];
 const [hobby1,hobby2]=hobbies // Note that you are usiing a name different from sports or cooking
 console.log(hobby1,hobby2)
 ```
+
+**Working with Asyncronous code or Async/Await functions**
+- The asyncronous code is when there is a delay between code execution and receiving the results
+
+```javascript 
+// Example of an asyncronous function
+setTimeout(()=>{console.log('Timer is done!')},1); //Here the timer is set to 1 millisec, 1sec will be 1000
