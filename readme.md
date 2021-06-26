@@ -43,8 +43,9 @@ const summarizeUser=(userName,userAge,userHashHobby)=>{
 
 // if the function in in one line then you can shorten it even further, getting rid of "{}, "return*
 
-const summarizeUser=(userName,userAge,userHashHobby)=>{
-     return(
-        `Name is`+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
-    );
+const summarizeUser=(userName,userAge,userHashHobby)=>`Name is`+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
+}
+
+// If there is only one parameter then you can also get rid of parameter brackets()
+const summarizeUser=userName=>`Name is`+userName'
 }
