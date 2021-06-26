@@ -25,7 +25,7 @@ const hashobbies=true;
 
 function summarizeUser(userName,userAge,userHasHobby){
     return(
-        `Name is`+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
+        'Name is'+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
     );
 }
 // Above is a named function. If I did not specify sumarizeUser then it would be
@@ -37,15 +37,19 @@ function summarizeUser(userName,userAge,userHasHobby){
 ```Javascript
 const summarizeUser=(userName,userAge,userHashHobby)=>{
      return(
-        `Name is`+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
+        'Name is'+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
     );
 }
 
 // if the function in in one line then you can shorten it even further, getting rid of "{}, "return*
 
-const summarizeUser=(userName,userAge,userHashHobby)=>`Name is`+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
+const summarizeUser=(userName,userAge,userHashHobby)=>'Name is'+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
 }
 
 // If there is only one parameter then you can also get rid of parameter brackets()
-const summarizeUser=userName=>`Name is`+userName'
+const summarizeUser=userName=>'Name is'+userName'
+}
+
+// But if there are no parameters needed in the functions then empty paranthesis () should be mentioned
+const summarizeUser=()=>'Name is Jay'
 }
