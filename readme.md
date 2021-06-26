@@ -111,3 +111,7 @@ const toArray=(...args)=>{
 
     console.log(toArray(1,2,3,4))
     // Note that it gives more flexibility with regards to how many arguments you want to pass into the array
+```
+
+**Object Destructuring**
+- You can extract specific elements/properties from an objects. Note that all the idividual contents of an object are usually called properties
