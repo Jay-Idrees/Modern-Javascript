@@ -89,7 +89,8 @@ consol.log(hobbies.map(hobby=>'Hobby:'+hobby))
 **Using Spread operator**
 - The spread operator copies all the contents (elements in array or object properties in objects) of whatever follows the three ...
 - Behind the scenes what this does is pulls out all the individual elements one by one and then copies them into the new array
+- It works for both objects and arrays
 
 ```javascript
-const copiedArray=[...hobbies];
-console.log(copiedArray)
+const copiedArray=[...hobbies]; //hobbies is a pre-existing array in this case
+const copiedArray={...hobbies}; //hobbies is a pre-exisiting object in this case
