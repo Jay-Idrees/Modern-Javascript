@@ -158,4 +158,21 @@ console.log(hobby1,hobby2)
 
 ```javascript 
 // Example of an asyncronous function
-setTimeout(()=>{console.log('Timer is done!')},1); //Here the timer is set to 1 millisec, 1sec will be 1000
+setTimeout(()=>{console.log('Timer is done!');},1); //Here the timer is set to 1 millisec, 1sec will be 1000
+
+```
+
+**Template literals**
+
+```javascript
+// Traditional way:
+const name = "Max";
+const age = 29;
+console.log("My name is " + name + " and I am " + age + " years old.");
+
+// Modern Javascript way
+const name = "Max";
+const age = 29;
+console.log(`My name is ${name} and I am ${age} years old.`);
+
+```
