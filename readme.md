@@ -32,3 +32,19 @@ function summarizeUser(userName,userAge,userHasHobby){
 // called an anonymous function
 // You can also capture the function as a variable const summarizeUser= anomalous function
 ```
+- Uisng Arrow function - you are able to eliminate the word 'function'
+
+```Javascript
+const summarizeUser=(userName,userAge,userHashHobby)=>{
+     return(
+        `Name is`+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
+    );
+}
+
+// if the function in in one line then you can shorten it even further, getting rid of "{}, "return*
+
+const summarizeUser=(userName,userAge,userHashHobby)=>{
+     return(
+        `Name is`+userName+ ', age is' +userAge+ ' and hobbies'+userHasHobby
+    );
+}
