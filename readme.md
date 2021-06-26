@@ -94,3 +94,6 @@ consol.log(hobbies.map(hobby=>'Hobby:'+hobby))
 ```javascript
 const copiedArray=[...hobbies]; //hobbies is a pre-existing array in this case
 const copiedArray={...hobbies}; //hobbies is a pre-exisiting object in this case
+```
+
+**Using Rest operator***
