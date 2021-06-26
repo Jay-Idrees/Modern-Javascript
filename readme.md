@@ -73,3 +73,12 @@ for(var i = 0; i < 10; i++){
 for (let hobby of hobbies){
     console.log(hobby);
 }
+
+```
+
+**Using Map on Arrays**
+- Map takes an existing array and modifies the individual components inside the array
+
+```Javascript
+consol.log(hobbies.map(hobby=>'Hobby:'+hobby))
+// here you have specified to print "hobby" before printing each individual hobby
