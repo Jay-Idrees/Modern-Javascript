@@ -115,3 +115,17 @@ const toArray=(...args)=>{
 
 **Object Destructuring**
 - You can extract specific elements/properties from an objects. Note that all the idividual contents of an object are usually called properties
+
+```javascript
+// Below is our object
+const person={
+    name:'Jay',
+    age:29,
+    greet(){console.log('Hi, I am '+ this.name);};//Here this refers to the person object
+}
+
+//Traditional way of extracting elements:
+const printName=(person)=>{ //Note that the 'person' here is a parameter not the person object
+    console.log(person.name);
+};
+printName(person) //The person here is the person object itself that is being passed as argument for the parameter
