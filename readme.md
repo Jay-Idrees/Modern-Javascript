@@ -129,3 +129,17 @@ const printName=(person)=>{ //Note that the 'person' here is a parameter not the
     console.log(person.name);
 };
 printName(person) //The person here is the person object itself that is being passed as argument for the parameter
+
+// You can also directly destructure an object inside the function paranthesis
+
+const printName=({name,age})=>{ 
+// Here when the object person is passed you are telling it to extract only name and age, which will be stored as variables
+    console.log(name, age);
+}
+printName(person)
+
+// The modern Javascript way of object destructuring is as below:
+
+const {name, age}=person;
+// here you are extrcting name and age from the person object
+```
