@@ -10,7 +10,7 @@ I have created this repository, so I can cirle back to it later when I want to r
 - Use `const` as much as possible when you do not expect the variable value to change
 
 
-- **Arrow Function**
+## **Arrow Function**
 
 - Standard function Example:
 
@@ -78,7 +78,7 @@ for (let hobby of hobbies){
 
 ```
 
-**Using Map on Arrays**
+## **Using Map on Arrays**
 - Map takes an existing array and modifies the individual components inside the array
 
 ```Javascript
@@ -86,7 +86,7 @@ consol.log(hobbies.map(hobby=>'Hobby:'+hobby))
 // here you have specified to print "hobby" before printing each individual hobby
 ```
 
-**Using Spread operator**
+## **Using Spread operator**
 - The spread operator copies all the contents (elements in array or object properties in objects) of whatever follows the three ...
 - Behind the scenes what this does is pulls out all the individual elements one by one and then copies them into the new array
 - It works for both objects and arrays
@@ -101,7 +101,7 @@ const copiedArray=[...hobbies]; //hobbies is a pre-existing array in this case
 const copiedArray={...hobbies2}; //hobbies is a pre-exisiting object in this case
 ```
 
-**Using Rest operator**
+## **Using Rest operator**
 - Rest operator can be used to merge multiple arguments into an array
 
 ```javascript
@@ -113,7 +113,7 @@ const toArray=(...args)=>{
     // Note that it gives more flexibility with regards to how many arguments you want to pass into the array
 ```
 
-**Object Destructuring**
+## **Object Destructuring**
 - You can extract specific elements/properties from an objects. Note that all the idividual contents of an object are usually called properties
 - Note that unlike Array destructuring, the names of the elements/properties must exactly match as in the object from which they are being extracted. In contrast for arrays the names need not to match exactly, the destructring operates by the location of index
 
@@ -144,7 +144,7 @@ printName(person)
 const {name, age}=person;
 // here you are extrcting name and age from the person object
 ```
-**Array Destructuring**
+## **Array Destructuring**
 - Similar to object destructuring, except that it operated by index location rather than the exact name of the element being extracted
 
 ```javascript
@@ -153,7 +153,7 @@ const [hobby1,hobby2]=hobbies // Note that you are usiing a name different from 
 console.log(hobby1,hobby2)
 ```
 
-**Working with Asyncronous code or Async/Await functions**
+## **Working with Asyncronous code or Async/Await functions**
 - The asyncronous code is when there is a delay between code execution and receiving the results
 
 ```javascript 
@@ -162,7 +162,7 @@ setTimeout(()=>{console.log('Timer is done!');},1); //Here the timer is set to 1
 
 ```
 
-**Template literals**
+## **Template literals**
 
 ```javascript
 // Traditional way:
