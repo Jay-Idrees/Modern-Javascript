@@ -57,7 +57,7 @@ const summarizeUser=()=>'Name is Jay'
 ```
 - Note that you cannot use `.this` inside the function if you are using an arrow function
 
-**Arrays and Looping through array**
+## **Arrays and Looping through an array**
 - Objects and arrays are reference types which means that even with using constants `const` variables- the values can be changed. Which means for example if you use `.push` method you can modify the array.
 
 
