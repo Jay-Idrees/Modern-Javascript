@@ -58,6 +58,8 @@ const summarizeUser=()=>'Name is Jay'
 - Note that you cannot use `.this` inside the function if you are using an arrow function
 
 **Arrays and Looping through array**
+- Objects and arrays are reference types which means that even with using constants `const` variables- the values can be changed. Which means for example if you use `.push` method you can modify the array.
+
 
 ```Javascript
 const hobbies=['sports', 'Cooking'];
@@ -82,3 +84,12 @@ for (let hobby of hobbies){
 ```Javascript
 consol.log(hobbies.map(hobby=>'Hobby:'+hobby))
 // here you have specified to print "hobby" before printing each individual hobby
+```
+
+**Using Spread operator**
+- The spread operator copies all the contents (elements in array or object properties in objects) of whatever follows the three ...
+- Behind the scenes what this does is pulls out all the individual elements one by one and then copies them into the new array
+
+```javascript
+const copiedArray=[...hobbies];
+console.log(copiedArray)
